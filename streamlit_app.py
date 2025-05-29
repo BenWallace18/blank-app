@@ -1,19 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
-# Set up page configuration (optional)
-st.set_page_config(
-    page_title="College Explorer",
-    page_icon="🎓",
-    layout="wide"
-)
-
-# Main landing content
-st.title("Welcome to the College Explorer")
-st.write("""
-Use the sidebar on the left to navigate between tools:
-- 🔍 **Find Colleges** to search and shortlist schools
-- 📊 **Manage Data** to review and edit college info
-- 🗺️ **Map Universities** to analyze the best location for you
-""")
-
-#streamlit run streamlit_app.py
+# Redirect to the "Home" page (must match the page title of 1_Home.py)
+st.switch_page("pages/1_Home.py")
